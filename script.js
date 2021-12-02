@@ -1,10 +1,12 @@
 /* ------------------------------------------------------------------------------------
 
-Author  : Romain Besson
+Author     : Romain Besson
 
-Date    : 10/24/2021
+Date       : 4/11/2021
 
-Algorithms: A*, Dijkstra's Algorithm, Greedy Best-First Search, BFS, DFS
+Published  : 19/11/2021
+
+Algorithms : A*, Dijkstra's Algorithm, Greedy Best-First Search, BFS, DFS
 
 ------------------------------------------------------------------------------------ */
 
