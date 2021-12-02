@@ -8,7 +8,6 @@ This repository is a JavaScript Visualizer for the popular pathfinding problem f
 Web Interface : https://r-besson.github.io/pathfinding.js/ <br>
 <br>
 #### Algorithms Used: <br>
-<br>
 A* : https://en.wikipedia.org/wiki/A*_search_algorithm <br>
 Dijkstra : https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm <br>
 DFS : https://en.wikipedia.org/wiki/Depth-first_search <br>
