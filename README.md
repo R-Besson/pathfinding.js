@@ -1,8 +1,8 @@
 # Pathfinding Visualizer
-[![](https://img.shields.io/badge/Author-Romain%20Besson-brightgreen)](https://github.com/R-Besson) ![](https://img.shields.io/badge/Started-4/11/2021-brightgreen) ![](https://img.shields.io/badge/Published-19/11/2021-brightgreen) \
-\
-![](https://img.shields.io/badge/HTML-ff5e00?style=flat&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) \
-\
+[![](https://img.shields.io/badge/Author-Romain%20Besson-brightgreen)](https://github.com/R-Besson) ![](https://img.shields.io/badge/Started-4/11/2021-brightgreen) ![](https://img.shields.io/badge/Published-19/11/2021-brightgreen) <br>
+<br>
+![](https://img.shields.io/badge/HTML-ff5e00?style=flat&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) <br>
+<br>
 This repository is a JavaScript Visualizer for the popular pathfinding problem found here : https://en.wikipedia.org/wiki/Pathfinding <br>
 <br>
 Web Interface : https://r-besson.github.io/pathfinding.js/ <br>
