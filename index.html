@@ -1,0 +1,96 @@
+<!-- ------------------------------------------------------------------------------------
+
+Author    : Romain Besson
+
+Date      : 4/11/2021
+
+Published : 19/11/2021
+
+------------------------------------------------------------------------------------ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div id="input-topbar">
+
+		<div class="new-option">
+			<span class="input-text">Node Width: <span class="input-text">40</span></span>
+			<input type="range" min="10" max="200" value="40" class="slider" name="NodeSize">
+		</div>
+
+		<div class="new-option" style="flex-direction: row; column-gap: 5px;">
+			<button class="button" id="Regen">Regen Grid</button>
+			<button class="button" id="FindPath">Find Path</button>
+			<button class="button" id="ClearPath">Clear Path</button>
+			<button class="button" id="ClearWalls">Clear Walls</button>
+			<button class="button" id="Maze">Generate Maze</button>
+		</div>
+
+		<div class="new-option" style="padding: 5px;">
+			<label class="label">Algorithm:</label>
+			<select class="dropdown" name="Algorithm" style="height: 20px; border-radius: 0px;">
+				<option value="AStar">A*</option>
+				<option value="Dijkstra">Dijkstra</option>
+				<option value="Greedy">Greedy Best-First Search</option>
+				<option value="BFS">Breadth First Search</option>
+				<option value="DFS">Depth First Search</option>
+			</select>
+		</div>
+
+		<div class="new-option" style="padding: 5px;">
+			<label class="label">Heuristic:</label>
+			<select class="dropdown" name="DistanceHeuristic" style="height: 20px; border-radius: 0px;">
+				<option value="euclidean">Euclidean</option>
+				<option value="manhattan">Manhattan</option>
+				<option value="octile">Octile</option>
+				<option value="chebyshev">Chebyshev</option>
+				<option value="idiot">Idiot</option>
+				<option value="random">Random</option>
+			</select>
+		</div>
+
+
+		<div class="new-option">
+			<label class="label">Allow Diagonals: <input type="checkbox" name="MoveDiagonally" class="checkbox"
+					checked></label>
+		</div>
+
+		<div class="new-option">
+			<label class="label">Status: <span id="Status" style="color: yellow;">Idle</span></label>
+			<label class="label">On-Screen Time: <span id="ScreenTime"
+					style="color: rgb(166, 239, 255);">0.00s</span></label>
+		</div>
+
+		<div class="new-option">
+			<label class="label">Path Length: <span id="PathLength" style="color: rgb(149, 255, 158);">0</span></label>
+			<label class="label">Iterations: <span id="Iterations" style="color: rgb(149, 255, 158);">0</span></label>
+		</div>
+
+		<div class="new-option">
+			<label class="label">* Click on a square to cycle through types</span></label>
+		</div>
+
+		<button id="top-bar-toggle"><i class="fas fa-caret-up fa-lg" style="color: white;"></i></button>
+
+	</div>
+
+	<div id="container"></div>
+
+	<script type="application/json" src="cfg.json"></script>
+	<script src="script.js" type="module"></script>
+	<script src="maze.js" type="module"></script>
+	<script src="heuristics.js" type="module"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

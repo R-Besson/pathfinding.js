@@ -1,0 +1,12 @@
+{
+	"Colors": {
+		"Path": "rgb(250, 255, 110)",
+		"OuterRing": "rgb(203, 148, 255)",
+		"InnerRing": "rgb(218, 191, 255)"
+	},
+	"Delays": {
+		"ColorNode": 5,
+		"NextIteration": 2,
+		"DrawPath": 10
+	}
+}

@@ -1,0 +1,157 @@
+/* ------------------------------------------------------------------------------------
+
+Author    : Romain Besson
+
+Date      : 4/11/2021
+
+Published : 19/11/2021
+
+------------------------------------------------------------------------------------ */
+
+body {
+	overflow: hidden;
+	background-color: #404040;
+	font-family: 'consolas';
+	font-size: 14px;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+#input-topbar {
+	background-color: rgba(64, 64, 64, 0.85);
+	position: absolute;
+	width: calc(100vw - 20px);
+	left: 10px;
+	top: 10px;
+	height: 55px;
+	outline: 1px solid rgb(30, 30, 30);
+	display: flex;
+	flex-direction: row;
+	z-index: 100;
+	border-radius: 10px;
+}
+
+.new-option {
+	padding-left: 10px;
+	padding-top: 10px;
+	width: max-content;
+	height: calc(100%-10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: safe;
+	row-gap: 5px;
+	margin: 0 5px;
+}
+
+.slider {
+	order: 2;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 8px;
+	border-radius: 8px;
+	background: #ffffff;
+	outline: none;
+	opacity: 0.85;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.button,
+.dropdown {
+	font-family: 'consolas';
+	letter-spacing: -0.25px;
+	white-space: nowrap;
+	order: 2;
+	-webkit-appearance: none;
+	color: rgb(0, 0, 0);
+	width: 100%;
+	height: 35px;
+	border-radius: 8px;
+	background: #ffffff;
+	outline: none;
+	opacity: 0.85;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.label {
+	white-space: nowrap;
+	order: 2;
+	-webkit-appearance: none;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: 18px;
+	outline: none;
+}
+
+.button:hover,
+.slider:hover,
+.dropdown:hover {
+	opacity: 1;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.checkbox {
+	border-top: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #e4e4e4;
+	cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:hover {
+	width: 17px;
+	height: 17px;
+}
+
+.input-text {
+	order: 1;
+}
+
+#container {
+	overflow: hidden;
+	background-color: #404040;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+rect {
+	position: absolute;
+	left: 100px;
+	outline: 1px solid rgb(128, 128, 128);
+	background-color: white;
+	color: transparent;
+	border: none;
+	user-select: none;
+	pointer-events: auto;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+#top-bar-toggle {
+	overflow: hidden;
+	background-color: rgba(64, 64, 64, 0.85);
+	position: absolute;
+	top: 65px;
+	height: 15px;
+	width: 25px;
+	outline: 1px solid rgb(30, 30, 30);
+	z-index: 100;
+
+	border: 0px solid transparent;
+	border-radius: 4px;
+}
+
+#top-bar-toggle:hover {
+	background-color: rgba(49, 49, 49, 0.85);
+}
